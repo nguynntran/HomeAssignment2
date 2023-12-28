@@ -10,21 +10,21 @@ int main(){
     /* Arithmetic operator: */
     Fraction frac3;
     frac3 = frac1 + frac2;
-    cout << frac1 << " + " << frac2 << ": " << frac3 << endl;
+    cout << frac1 << " + " << frac2 << " = " << frac3 << endl;
     frac3 = frac1 - frac2;
-    cout << frac1 << " - " << frac2 << ": " << frac3 << endl;
+    cout << frac1 << " - " << frac2 << " = " << frac3 << endl;
     frac3 = frac1 * frac2;
-    cout << frac1 << " * " << frac2 << ": " << frac3 << endl;
+    cout << frac1 << " * " << frac2 << " = " << frac3 << endl;
     frac3 = frac1 / frac2;
-    cout << frac1 << " / " << frac2 << ": " << frac3 << endl;
+    cout << frac1 << " / " << frac2 << " = " << frac3 << endl;
     /* Arithmetic compare operator */
     cout << "------------- " << endl;
-    cout << frac1 << " == " << frac2 << " = " << (frac1 == frac2) << endl;
-    cout << frac1 << " != " << frac2 << " = " << (frac1 != frac2) << endl;
-    cout << frac1 << " < " << frac2 << " = " << (frac1 < frac2) << endl;
-    cout << frac1 << " > " << frac2 << " = " << (frac1 > frac2) << endl;
-    cout << frac1 << " <= " << frac2 << " = " << (frac1 <= frac2) << endl;
-    cout << frac1 << " >= " << frac2 << " = " << (frac1 >= frac2) << endl;
+    cout << frac1 << " == " << frac2 << " : " << (frac1 == frac2) << endl;
+    cout << frac1 << " != " << frac2 << " : " << (frac1 != frac2) << endl;
+    cout << frac1 << " < " << frac2 << " : " << (frac1 < frac2) << endl;
+    cout << frac1 << " > " << frac2 << " : " << (frac1 > frac2) << endl;
+    cout << frac1 << " <= " << frac2 << " : " << (frac1 <= frac2) << endl;
+    cout << frac1 << " >= " << frac2 << " : " << (frac1 >= frac2) << endl;
     /* Assignment operator */
     cout << "------------- " << endl;
     frac3 = frac1;

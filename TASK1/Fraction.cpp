@@ -1,4 +1,9 @@
+/*1) Construct the fraction class for the rational numbers. It should have overloaded compound assingment and arithmetical operators following the rules we discussed in the class,
+ getters and setters, << and >> operators, constructors and assingment operator. You should always have simplified version of the fraction after all the operations. Write the function to convert the fraction into the "double" type. Please verify that all of your implemented operations work properly before sending the solution. */
 
+
+
+#pragma once
 #include <iostream>
 #include <string>
 #include <cmath>

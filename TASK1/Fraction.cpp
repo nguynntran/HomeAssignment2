@@ -24,11 +24,15 @@ public:
         return d;
     }
     /* Constructor */
-    Fraction(){
+    Fraction(){                 // Default Constructor 
         n = 0;
         d = 1;
     }
     Fraction(int n, int d){
+        if (d == 0){
+            cout << "ERROR:  ATTEMPING TO DIVIDE BY ZERO." << endl;   // Return announcement when denominator is 0.
+            exit(0);
+        }
         this -> n  = n;
         this -> d = d;
         ReduceFraction(this->n, this->d);
@@ -159,11 +163,15 @@ ostream& operator<<(ostream &cout, Fraction &Fraction) {
 /* Istream operator overloading << */
 istream &operator>>(istream &cin, Fraction &Fraction) {
     int n, d;
+    
     cin >> n >> d;
 
     Fraction.setNumerator(n);
     Fraction.setDenominator(d);
-
+    if (Fraction.getDenominator() == 0){
+        cout << "ERROR:  ATTEMPING TO DIVIDE BY ZERO." << endl;  // Return announcement when denominator is 0.
+            exit(0);
+    }
     if (!cin) {
         n = 0;
         d = 1;
